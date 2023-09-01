@@ -1,0 +1,5 @@
+resources/data/tmp/*
+resources/data/parquet/*
+solucion
+venv
+.idea/
