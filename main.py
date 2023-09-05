@@ -1,5 +1,3 @@
-import pyspark.sql.functions as f
-f.when()
 # This is a sample Python script.
 
 

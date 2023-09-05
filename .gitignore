@@ -3,3 +3,6 @@ resources/data/parquet/*
 solucion
 venv
 .idea/
+resources/data/csv/movies.csv
+resources/data/csv/ratings.csv
+resources/data/csv/tags.csv
