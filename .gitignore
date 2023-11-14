@@ -6,3 +6,6 @@ venv
 resources/data/csv/movies.csv
 resources/data/csv/ratings.csv
 resources/data/csv/tags.csv
+tmp
+notebooks/.ipynb_checkpoints/
+ejercicios/.ipynb_checkpoints/
