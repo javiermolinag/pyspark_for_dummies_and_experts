@@ -12,7 +12,7 @@ https://github.com/javiermolinag/pyspark_for_dummies_and_experts.git
 ```
 2. We recommend to have python 3.9. Create a virtual environment called venv with:
 ```bash
-python3 -m venv venv
+python -m venv venv
 ```
 
 3. Activate the virtual environment with
@@ -28,4 +28,8 @@ python -m pip install -r requirements.txt
 5. Using the following command in the terminal you can work with the notebooks: 
 ```bash
 jupyter-notebook
+```
+6. If you cannot see the spylon kernel (scala) use
+```bash
+python -m spylon_kernel install
 ```
