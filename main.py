@@ -1,4 +1,5 @@
 # This is a sample Python script.
+import os
 
 
 # Press Mayús+F10 to execute it or replace it with your code.
@@ -8,6 +9,14 @@
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    # Writing cmd file
+    dir_path = os.path.dirname(__file__)
+    line_1 = "@echo off\n"
+    line_2 = 'set PROJECT_HOME="' + dir_path + '"\n'
+    with open('run.cmd', 'r+') as f:
+        content = f.read()
+        f.seek(0, 0)
+        f.write(line_1 + line_2 + content)
 
 
 # Press the green button in the gutter to run the script.

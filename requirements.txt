@@ -1,4 +1,4 @@
 pyspark==3.4.1
 ipython==8.14.0
 jupyter==1.0.0
-spylon_kernel==0.4.1
+toree==0.5.0
