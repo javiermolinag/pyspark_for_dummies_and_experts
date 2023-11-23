@@ -1,4 +1,3 @@
-
 pushd "%~dp0\..\"
 set PROG_HOME=%cd%
 popd

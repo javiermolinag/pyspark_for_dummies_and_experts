@@ -12,7 +12,7 @@ def print_hi(name):
     # Writing cmd file
     dir_path = os.path.dirname(__file__)
     line_1 = "@echo off\n"
-    line_2 = 'set PROJECT_HOME="' + dir_path + '"\n'
+    line_2 = "set PROJECT_HOME=" + dir_path + "\n"
     with open('run.cmd', 'r+') as f:
         content = f.read()
         f.seek(0, 0)

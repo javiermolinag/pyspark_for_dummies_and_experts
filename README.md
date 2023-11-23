@@ -25,11 +25,26 @@ venv\Scripts\activate
 python -m pip install -r requirements.txt
 ```
 
-5. Using the following command in the terminal you can work with the notebooks: 
+5. Install the scala kernel
+```bash
+jupyter toree install --python=python
+```
+
+6. Check that the new kernel is installed correctly, the `apache_toree_scala` kernel should exist
+```bash
+jupyter kernelspec list
+```
+
+7. Generate the `run.cmd` file to activate the scala kernel
+```bash
+python main.py
+```
+
+8. Copy the `run.cmd` file to the `bin` folder inside the path where the `apache_toree_scala` kernel was stored
+
+9. Replace the file name `run.sh` by `run.cmd` in the `kernel.json` file inside the `apache_toree_scala` kernel path
+
+10. Using the following command in the terminal you can work with the notebooks: 
 ```bash
 jupyter-notebook
-```
-6. If you cannot see the spylon kernel (scala) use
-```bash
-python -m spylon_kernel install
 ```
